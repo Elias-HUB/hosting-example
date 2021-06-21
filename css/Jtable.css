@@ -1,0 +1,188 @@
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  margin: 0px;
+  position: Relative;
+  height: 100%;
+  background: #373b44; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #4286f4,
+    #373b44
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #4286f4,
+    #373b44
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/* STRUCTURE */
+.Centrado {
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 25px;
+  padding-top: 20px;
+}
+
+#formContent {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  width: 95%;
+  max-width: 95%;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.RadioBTN {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.formulario h2 {
+  font-size: 16px;
+  color: #001f3f;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.formulario > div {
+  padding: 20px 0;
+  border-bottom: 1px solid #cdd4da;
+}
+.formulario label {
+  padding: 5px 15px;
+  border-radius: 2px;
+  border: 1px solid #cdd4da;
+}
+.formulario .radio label,
+.formulario .checkbox label {
+  display: inline-block;
+  cursor: pointer;
+  color: #80b1fa;
+  position: relative;
+  padding: 5px 15px 5px 51px;
+  font-size: 1em;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.formulario .radio label:hover,
+.formulario .checkbox label:hover {
+  background: rgba(255, 65, 54, 0.1);
+}
+.formulario .radio label:before,
+.formulario .checkbox label:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 15px;
+  border-radius: 50%;
+  background: none;
+  border: 3px solid #80b1fa;
+}
+.formulario input[type="radio"] {
+  display: none;
+}
+.formulario input[type="radio"]:checked + label:before {
+  display: none;
+}
+.formulario input[type="radio"]:checked + label {
+  padding: 5px 15px;
+  background: #80b1fa;
+  border-radius: 2px;
+  color: #fff;
+}
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.btn-outline-info {
+  border-color: #4286f4;
+  color: #4286f4;
+}
+.btn-outline-info:hover,
+.btn-outline-info:active,
+.btn-outline-info:visited,
+.btn-outline-info:focus {
+  border-color: #28458f !important;
+  background: #28458f !important; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #3d6add,
+    #28458f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #3d6add,
+    #28458f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+}
+
+thead {
+  background: #305088; /* fallback for old browsers */
+  color: white;
+}
+
+th {
+  vertical-align: middle !important;
+}
+
+tr {
+  text-align: left;
+}
+
+td {
+  height: 20px !important;
+}
