@@ -9,8 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Jekyll v3.8.5">
-  <title>Home</title>
-
+  <title>Nueva Orden de Preparación</title>
 
 
   <!-- Bootstrap core CSS -->
@@ -27,6 +26,15 @@
     crossorigin="anonymous"></script>
   <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/pricing/">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="./index_files/jumbotron.css" rel="stylesheet">
+  <link href="./css/styles.css" rel="stylesheet">
+
 
   <!-- DataTable -->
   <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -54,12 +62,7 @@
 
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/Jtable.css">
-  <style>
-
-  </style>
-  <!-- Custom styles for this template -->
-  <link href="./index_files/jumbotron.css" rel="stylesheet">
-  <link href="./css/styles.css" rel="stylesheet">
+  
 </head>
 
 <body>
@@ -73,14 +76,24 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item mr-2 active">
-            <a class="nav-link" href="index.html">Remito</a>
+          <li class="nav-item dropdown mr-2">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">RECEPCIONES</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="alojamiento.html">REMITOS</a>
+              <a class="dropdown-item" href="Diseño.html">ÓRDENES DE MOVIMIENTOS</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown mr-2">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">ÓRDENES DE PREPARACIÓN</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="alojamiento.html">CREAR</a>
+              <a class="dropdown-item" href="Diseño.html">MODIFICAR</a>
+            </div>
           </li>
           <li class="nav-item mr-2">
-            <a class="nav-link" href="">Orden de movimiento</a>
-          </li>
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="">Orden de envio</a>
+            <a class="nav-link" href="#">DESPACHO</a>
           </li>
         </ul>
         <form class="form-inline justify-content-lg-end justify-content-md-start">
@@ -92,200 +105,69 @@
     </div>
   </nav>
 
-
   <main role="main">
+<br>
+<br>
+    <div class="container rounded bg-white p-5 col-8 mb-5">
+      <h1>Nueva Orden de Preparación</h1>
 
-    <br>
-    <div class="container mt-5" id="formContent">
-      <h1>Orden de movimiento</h1>
+      
+      <div class="container mt-5 ">
+        <h2>Orden de envío nº 1234</h2>
+        <div class="my-5">
 
-
-      <div class="form-row">
-        <div class="form-group col-md-2">
-          <div class="Border">
-            <label Class="control-label">Nro Remito</label>
+        </div>
+        <div class="form-group row">
+          <label for="veh" class="col-sm-3 col-form-label">Clark: </label>
+          <div class="col-sm-9">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Clark 1</option>
+              <option>Clark 2</option>
+              <option>Clark 3</option>
+              <option>Clark 4</option>
+              <option>Clark 5</option>
+            </select>
           </div>
-          <div class="row">
-            <div class="col-10 p-0">
-              <input ID="TboxDescripcion" name="TboxDescripcion" Class="form-control">
-            </div>
-            <div class="col-2 p-0">
-              <button type="button" class="btn btn-info">
-                <i class="bi bi-search"></i>
-              </button>
-            </div>
+        </div>
+        <div class="form-group row">
+          <label for="veh" class="col-sm-3 col-form-label">Clarkista: </label>
+          <div class="col-sm-9">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>gesquivel - Giselle Esquivel</option>
+              <option>nramirez - Nicolás Ramírez</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="veh" class="col-sm-3 col-form-label">Zorra: </label>
+          <div class="col-sm-9">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Zorra 1</option>
+              <option>Zorra 2</option>
+              <option>Zorra 3</option>
+              <option>Zorra 4</option>
+              <option>Zorra 5</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="veh" class="col-sm-3 col-form-label">Operario de zorra:</label>
+          <div class="col-sm-9">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>evalenzuela - Elías Valenzuela</option>
+              <option>ecordoba - Ezequiel Córdoba</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="veh" class="col-sm-3 col-form-label">Calle: </label>
+          <div class="col-sm-9">
+            <input class="form-control" id="exampleFormControlSelect1"></input>
           </div>
         </div>
       </div>
-      <div style="padding: 5px;" class="mx-4">
-        <!-- Grilla detalle remito -->
-        <table id="example" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%"
-          style="font-size: small;">
-          <thead>
-            <tr>
-              <th style="text-align: center">Nº</th>
-              <th>Deposito</th>
-              <th>Area</th>
-              <th>Pasillo</th>
-              <th>Posición</th>
-              <th>Nivel</th>
-              <th>Operario</th>
-              <th>Prioridad</th>
-              <th>Observación</th>
-              <th>Estado</th>
-              <th style="text-align: center; width: 80px">Acciones</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>1</td>
-              <td>20</td>
-              <td>5</td>
-              <td>3</td>
-              <td>2</td>
-              <td>22014- Pepe Alvarez</td>
-              <td>1</td>
-              <td>Tarea Finalizada</td>
-              <td>
-                Completada
-              </td>
-              <td>
-                <button type="button" class="btn btn-success">
-                  <i class="bi bi-check2"></i>
-                </button>
-                <button type="button" class="btn btn-danger">
-                  <i class="bi bi-x-circle"></i>
-                </button>
-                <button type="button" class="btn btn-info">
-                  <i class="bi bi-printer"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>12</td>
-              <td>23</td>
-              <td>4</td>
-              <td>5</td>
-              <td>2</td>
-              <td>20654- Roman Valverde</td>
-              <td>1</td>
-              <td>Prioridad para guardarlo</td>
-              <td>
-                Pendiente
-              </td>
-              <td>
-                <button type="button" class="btn btn-success">
-                  <i class="bi bi-check2"></i>
-                </button>
-                <button type="button" class="btn btn-danger">
-                  <i class="bi bi-x-circle"></i>
-                </button>
-                <button type="button" class="btn btn-info">
-                  <i class="bi bi-printer"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>43</td>
-              <td>75</td>
-              <td>3</td>
-              <td>1</td>
-              <td>2</td>
-              <td>26918- Agustin Suarez</td>
-              <td>2</td>
-              <td></td>
-              <td>
-                Pendiente
-              </td>
-              <td>
-                <button type="button" class="btn btn-success">
-                  <i class="bi bi-check2"></i>
-                </button>
-                <button type="button" class="btn btn-danger">
-                  <i class="bi bi-x-circle"></i>
-                </button>
-                <button type="button" class="btn btn-info">
-                  <i class="bi bi-printer"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>54</td>
-              <td>26</td>
-              <td>9</td>
-              <td>1</td>
-              <td>1</td>
-              <td>26844- Juan Contento</td>
-              <td>3</td>
-              <td></td>
-              <td>
-                Pendiente
-              </td>
-              <td>
-                <button type="button" class="btn btn-success">
-                  <i class="bi bi-check2"></i>
-                </button>
-                <button type="button" class="btn btn-danger">
-                  <i class="bi bi-x-circle"></i>
-                </button>
-                <button type="button" class="btn btn-info">
-                  <i class="bi bi-printer"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-
-
-        <br>
-        <br>
-      </div>
     </div>
-    <br>
-    <br>
+      
   </main>
 
   <footer class="page-footer text-white page-footer-dark font-small pt-5 pb-4">
@@ -398,13 +280,15 @@
   <script>
     $(document).ready(function () {
       $("#example").DataTable({
-        columnDefs: [
-          { orderable: false },
-          null,
-          null,
-          null,
-          null
-        ],
+        // columnDefs: [
+        //   {
+        //     orderable: false,
+        //     targets: [7],
+        //   },
+        //   { visible: false, targets: 1 },
+        //   { responsivePriority: 1, targets: 0 },
+        //   { responsivePriority: 2, targets: -1 },
+        // ],
         lengthMenu: [
           [5, 10, 15, -1],
           [5, 10, 15, "Todos"],
