@@ -109,26 +109,24 @@
   <main role="main">
 
     <br>
-    <div class="container mt-5 p-5 rounded bg-white" id="">
-      <br>
-      <h1>Despacho</h1>
+    <div class="container mt-1 p-5 rounded bg-white" id="">
+      
+      <h2>Despacho</h2>
 
 
       <div class="form-row Centrado">
-        <div class="form-group col-md-3">
+        <div class="form-group">
           <div class="Border">
-            <label Class="control-label">Orden de Preaparación</label>
+            <label Class="ml-5 mt-1">Orden de Preparación:  </label> 
           </div>
-          <div class="row">
-            <div class="col-10 p-0">
-              <input ID="TboxDescripcion" name="TboxDescripcion" Class="form-control">
-            </div>
-            <div class="col-2 p-0">
-              <button type="button" class="btn btn-info">
-                <i class="bi bi-search"></i>
-              </button>
+          <div class="input-group mb-3">
+            
+            <input type="text" class="form-control" placeholder="N° orden de preparación" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button"><i class="bi bi-search"></i></button>
             </div>
           </div>
+          
         </div>
       </div>
       <hr>
@@ -136,7 +134,7 @@
       <div class="form-row Centrado">
         <div class="form-group col-md-2">
           <div class="Border">
-            <label Class="control-label">Nro Orden de Envio</label>
+            <label Class="control-label">Nro Orden de Envío</label>
           </div>
           <input ID="TboxValorNominal" name="TboxValorNominal" Class="form-control">
         </div>
@@ -201,7 +199,7 @@
       </div>
 
       <div class="d-flex flex-row-reverse bd-highlight">
-        <button type="button" class="btn btn-primary">Despachar</button>
+        <button type="button" class="btn btn-success">Despachar</button>
       </div>
 
       <br>
@@ -248,7 +246,7 @@
             <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
           </div>
 
-          <button type="button" class="btn btn-info mt-3">
+          <button type="button" class="btn btn-primary mt-3">
             <i class="bi bi-printer"></i> Imprimir
           </button>
         </div>
