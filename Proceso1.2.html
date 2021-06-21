@@ -9,8 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Jekyll v3.8.5">
-  <title>Home</title>
-
+  <title>Nueva Orden de Preparación</title>
 
 
   <!-- Bootstrap core CSS -->
@@ -27,6 +26,15 @@
     crossorigin="anonymous"></script>
   <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/pricing/">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="./index_files/jumbotron.css" rel="stylesheet">
+  <link href="./css/styles.css" rel="stylesheet">
+
 
   <!-- DataTable -->
   <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -54,18 +62,13 @@
 
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/Jtable.css">
-  <style>
 
-  </style>
-  <!-- Custom styles for this template -->
-  <link href="./index_files/jumbotron.css" rel="stylesheet">
-  <link href="./css/styles.css" rel="stylesheet">
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand mr-4" href="index.html"><i class="bi bi-server"></i> UTN-HOSTING</a>
+      <a class="navbar-brand mr-4" href="index.html"><i class="bi bi-server"></i> Warehouse Locator</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
         aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -73,14 +76,24 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item mr-2 active">
-            <a class="nav-link" href="index.html">Remito</a>
+          <li class="nav-item dropdown mr-2">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">RECEPCIONES</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="alojamiento.html">REMITOS</a>
+              <a class="dropdown-item" href="Diseño.html">ÓRDENES DE MOVIMIENTOS</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown mr-2">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">ÓRDENES DE PREPARACIÓN</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="alojamiento.html">CREAR</a>
+              <a class="dropdown-item" href="Diseño.html">MODIFICAR</a>
+            </div>
           </li>
           <li class="nav-item mr-2">
-            <a class="nav-link" href="">Orden de movimiento</a>
-          </li>
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="">Orden de envio</a>
+            <a class="nav-link" href="#">DESPACHO</a>
           </li>
         </ul>
         <form class="form-inline justify-content-lg-end justify-content-md-start">
